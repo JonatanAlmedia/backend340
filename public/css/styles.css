@@ -56,6 +56,68 @@ nav ul a {
 nav ul a:hover {
   color: lightblue;
 }
+/* -------------- pages --------------------- */
+nav > ul{
+  margin: 0px;
+}
+
+nav li{
+  text-decoration: none;
+  float: left;
+  width: 15%;  
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;    
+}
+
+nav li:hover{
+  background-color: #111;
+  margin-top: 0px;
+}
+main{    
+  font-family: 'Roboto', sans-serif;   
+  text-decoration: none;
+}
+
+main > h1{
+  margin-left: 10px;
+  
+}
+
+main #inv-display{   
+  display: flex; 
+  flex-wrap: wrap;
+  list-style-type: none; 
+    
+}
+
+#inv-display li{     
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 203px; 
+  border: solid grey 1px;
+  height: 260px;
+  border-radius: 10px; 
+  margin: 10px;  
+  text-align: center;         
+}
+
+main li img{ 
+  margin-top: 0px;   
+  border-radius: 10px;       
+}
+hr {
+  border-style: solid grey;
+  border-width: 4px;
+}
+.namePrice {
+  padding-bottom: 15px;
+}
+h2 {
+  font-size: 1rem;
+}
 /* ----------- main banner ------------------ */
 
 .banner {
