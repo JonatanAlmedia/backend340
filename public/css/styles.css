@@ -19,7 +19,12 @@ body {
   border-radius: 15px;
   padding: 20px;
 }
-
+/* main img {
+  width: 100%;
+} */
+section h1 {
+  padding-left: 10px;
+}
 /* --------------- head ---------------------- */
 #top-header {
   display: flex;
@@ -56,70 +61,8 @@ nav ul a {
 nav ul a:hover {
   color: lightblue;
 }
-/* -------------- pages --------------------- */
-nav > ul{
-  margin: 0px;
-}
 
-nav li{
-  text-decoration: none;
-  float: left;
-  width: 15%;  
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  color: green;
-  text-align: center;
-  padding: 14px 16px;    
-}
-
-nav li:hover{
-  background-color: #111;
-  margin-top: 0px;
-}
-main{    
-  font-family: 'Roboto', sans-serif;   
-  text-decoration: none;
-}
-
-main > h1{
-  margin-left: 10px;
-  
-}
-
-main #inv-display{   
-  display: flex; 
-  flex-wrap: wrap;
-  list-style-type: none; 
-    
-}
-
-#inv-display li{     
-  display: grid;
-  grid-template-rows: 1fr;
-  width: 203px; 
-  border: solid grey 1px;
-  height: 260px;
-  border-radius: 10px; 
-  margin: 10px;  
-  text-align: center;         
-}
-
-main li img{ 
-  margin-top: 0px;   
-  border-radius: 10px;       
-}
-hr {
-  border-style: solid grey;
-  border-width: 4px;
-}
-.namePrice {
-  padding-bottom: 15px;
-}
-h2 {
-  font-size: 1rem;
-}
 /* ----------- main banner ------------------ */
-
 .banner {
   display: flex; 
   position: relative;
@@ -136,11 +79,12 @@ h2 {
 .delorean_img {
   margin-left: 30%;
 }
+
 /* ----------------- information section ---------------- */
 .car_details {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 50px 20px;
+  margin-top: 70px;
 }
 .car_details h2 {
   font-family: "Prompt";
@@ -172,7 +116,116 @@ h2 {
   font-size: 20px;
   padding: 10px;
 }
-
+/* -------------- pages view --------------------- */
+nav > ul{
+  margin: 0px;
+}
+nav li{
+  text-decoration: none;
+  float: left;
+  width: 15%;  
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;    
+}
+nav li:hover{
+  background-color: #111;
+  margin-top: 0px;
+}
+main{    
+  font-family: 'Roboto', sans-serif;   
+  text-decoration: none;
+}
+main > h1{
+  margin-left: 10px;
+}
+main #inv-display{   
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none; 
+}
+#inv-display li{     
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 200px; 
+  border: solid grey 1px;
+  height: auto;
+  border-radius: 10px; 
+  margin: 10px;  
+  text-align: center;         
+}
+#inv-display img {
+  width: 100%;
+  padding: 0;
+}
+#inv-display a {
+  height: 132px;
+}
+main li img{ 
+  margin-top: 0px;   
+  border-radius: 10px;  
+  padding: 10px;     
+}
+hr {
+  border-style: solid grey;
+  border-width: 4px;
+}
+.namePrice {
+  padding-bottom: 15px;
+}
+h2 {
+  font-size: 1rem;
+}
+/* ----------------- main detail view ------------------- */
+.detail_view {
+  display: flex;
+  gap: 15px;
+}
+.detail_view img {
+  width: 100%;
+  padding: 15px;
+}
+.car_detail h2 {
+  font-size: 30px;
+}
+.car_detail p, .car_detail h2, .car_detail span {
+  margin: 30px 0;
+}
+.namePrice {
+  padding: 5px;
+}
+.namePrice a {
+  text-decoration: none;
+  color: #0bbfdc;
+  font-size: 17px;
+}
+.namePrice a:hover {
+  color: lightblue;
+}
+/* ------------------ error ----------------------- */
+.image_error {
+  width: 50%;
+}
+.message_error {
+  padding: 10px;
+  font-size: 20px;
+}
+/* ---------------- footer ------------------------ */
+footer {
+  margin-top: 20px;
+    font-size: 15px;
+  }
+  footer a {
+    font-size: 25px;
+    font-family: "Prompt";
+    color: #0bbfdc;
+  }
+  footer a:hover {
+    color: lightblue;
+  }
 
 /* -------------------------------------- phone view --------------------------------------------- */
 @media (max-width: 870px) {
@@ -228,11 +281,22 @@ h2 {
     grid-row: 1;
     order: 1;
   }
+  /* ----------------- main detail view ------------------- */
+.detail_view {
+  flex-wrap: wrap;
+}
+.car_detail {
+  padding: 15px;
+}
+/* ------------------ error ----------------------- */
+.image_error {
+  width: 100%;
+}
   /* ----------------copyright --------------- */
   .copyright {
     margin: 0;
   }
   footer {
     padding: 10px;
-  }
+  }  
 }

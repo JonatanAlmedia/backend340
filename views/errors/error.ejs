@@ -3,5 +3,9 @@
     <% } else {
         res.redirect('/')
     } %>
-
-<%- message %>
+<p class="message_error"><%- message %></p>
+<% if (title == 404) { %>
+    <img src="../../images/site/error_404.jpg" alt="image_error_404" class="image_error">
+    <% } else { %>
+        <img src="../../images/site/error_500.jpeg" alt="image_error_500" class="image_error">
+    <%  } %>
