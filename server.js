@@ -16,6 +16,7 @@ const utilities = require('./utilities/')
 const session = require("express-session")
 const pool = require('./database/')
 const accountController = require("./controllers/accountController")
+const bodyParser = require("body-parser")
 
 /* ***********************
  * View Engine and Templates
@@ -43,12 +44,12 @@ app.use(function(req, res, next){
   res.locals.messages = require('express-messages')(req, res)
   next()
 })
-
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 /* ***********************
  * Routes
  *************************/
 app.use(static)
-
 // Index route
 app.get("/", utilities.handleErrors(baseController.buildHome))
 // Inventory routes
