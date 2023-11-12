@@ -11,5 +11,16 @@ const utilities = require('../utilities/')
       nav,
     })
   }
+
+/* ****************************************
+*  Deliver registration view
+* *************************************** */
+ async function buildRegistration(req, res, next) {
+    let nav = await utilities.getNav()
+    res.render("account/registration", {
+      title: "Signin",
+      nav,
+    })
+  }
   
-  module.exports = { buildLogin }
+  module.exports = { buildLogin, buildRegistration }

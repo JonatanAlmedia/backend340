@@ -219,13 +219,12 @@ h2 {
   padding: 10px;
   font-size: 20px;
 }
-/* -------------- login form ---------------------- */
-.login_form {
+/* -------------- login signin form ---------------------- */
+.login_form, .signin_form {
   max-width: 500px;
   width: 100%;
-  background-color: lightblue;
   padding: 15px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 15px;
   margin: 30px auto;
   font-size: 20px;
@@ -242,6 +241,7 @@ label {
 input {
   padding: 10px;
   font-size: 15px;
+  border: 2px solid black;
 }
 button {
   padding: 10px 40px;
@@ -259,7 +259,7 @@ button:hover {
   cursor: pointer;
 }
 .login_form a {
-  color: grey;
+  color: #0bbfdc;
 } 
 .login_form a:hover {
   color: black;
