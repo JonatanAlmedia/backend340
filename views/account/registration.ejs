@@ -7,6 +7,15 @@
 
 <%- messages() %>
 
+<% if (errors) { %>
+  <ul class="notice">
+ <% errors.array().forEach(error => { %>
+   <li><%= error.msg %></li>
+<%  }) %>
+ </ul>
+<% } %>
+
+
 <!-- register form -->
 <div class="signin_form">
   <P class="form_announcement">All fields are required</P>
