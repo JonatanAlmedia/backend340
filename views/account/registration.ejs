@@ -9,6 +9,7 @@
 
 <!-- register form -->
 <div class="signin_form">
+  <P class="form_announcement">All fields are required</P>
   <form action="/account/registration" method="post">
 
     <label for="firstName">First Name:</label>
@@ -24,7 +25,7 @@
       <input type="checkbox" id="checkbox" name="checkbox" onclick="showPassword()">
       <label for="checkbox">Show Password </label><br>
     </div>
-            
+    <p class="form_announcement">Password mut be minimun of 12 characteres and include 1 capital letter, 1 number and 1 special character.</p>
     <button type="submit">Register</button>
   </form>
 </div>

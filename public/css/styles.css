@@ -234,6 +234,9 @@ form {
   display: flex;
   flex-direction: column;
 }
+.form_announcement {
+  color: #0bbfdc;
+}
 label {
   padding: 10px 0;
   font-family: "Prompt";
@@ -242,6 +245,15 @@ input {
   padding: 10px;
   font-size: 15px;
   border: 2px solid black;
+}
+.showPassword label {
+  border: 1px solid black;
+  background-color: #0bbfdc;
+  padding: 10px;
+  border-radius: 15px;
+}
+#checkbox {
+  display: none;
 }
 button {
   padding: 10px 40px;
