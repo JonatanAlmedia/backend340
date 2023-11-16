@@ -276,6 +276,21 @@ button:hover {
 .login_form a:hover {
   color: black;
 }
+#loginForm span {
+  font-size: 13px;
+  margin-top: 10px;
+}
+/* ------------- form validation -------------------*/
+input:required:invalid, input:focus:invalid {
+  background-image: url(/images/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+ }
+  input:required:valid {
+  background-image: url(/images/valid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  }
 /* ---------------- footer ------------------------ */
 footer {
   margin-top: 20px;
